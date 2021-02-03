@@ -1,10 +1,10 @@
 # Project1
 
-This document contains guidelines, requirements, and suggestions for Project 1.
+This Project is a collaborative effort to build a portfolio recommendation that complements an existing portfolio for a potential client : Ralph 
 
 ## Team Effort
 
-Before anything, remember that projects are a group effort: Working closely with your teammates is a requirement. This helps teach real-world collaborative workflows and enables you to tackle more difficult problems than you'd be able to working alone.
+We divided the components of this project work into technical, research, presentation and miscellaneous to enable collorative contributions by team members. This division allowed for minimizing turnaround ties
 
 In other words, working in groups allows you to **work smart** and **dream big**. Take advantage of it!
 
@@ -12,10 +12,9 @@ In other words, working in groups allows you to **work smart** and **dream big**
 
 Proposal for Project1 :
 
-The project involves comparing the performance of the top 4 market cap stocks in the S &P 500 list and comparing the past 12 month performance with the SPY (index)
-
-The tools we use :
-alpaca api to get the data of the past 12 months    2. pandas   3. python  4.plotting libraries : maxplot, hvplot, sns, plotly , plotly express, dash gallery, Kaggle
+The project involves comparing the performance of the top 10 market cap stocks in the FINTECH domain and comparing the past 12 month performance with the SPY (index)
+The tools we used :
+1. alpaca api to get the data of the past 12 months    2. pandas   3. python  4.plotting libraries : maxplot, hvplot, sns, plotly , plotly express, dash gallery, Kaggle
 
 
 ## Finding Data
