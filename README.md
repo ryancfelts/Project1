@@ -42,7 +42,7 @@ https://app.alpaca.markets/brokerage/dashboard/overview
 
 There were two main notebooks used for coding the cleanup and analysis for this project :
 
-#1. Data_Cleanup.ipynb : 
+### Data_Cleanup.ipynb : 
      a. Importing Libraries and dependencies -- os, numpy,pandas,alpaca_trade_api
      b. Generated the dataframe for top 10 fintech stocks using api
      c.The tickers used to create dataframe :  "SQ","ADYEY","MELI","GDOT","PYPL","FISV","PFE","GS","V","AXP","SPY" . These are the top 10 fintech stock found in Referenc: Motley        fool and other online investment portals
@@ -50,7 +50,7 @@ There were two main notebooks used for coding the cleanup and analysis for this 
      AAPL,NKE,GLW,NEE,IBM,UIS,TROX,BND,MSFT,JNJ,BRK.B,VCLT,SPLB,IGLB,BAR,SLV,DBO
      e. The two datafiles were checked for nulls and other incongruent data and using code cleansed.
      
- #2. Data_Analysi.ipynb :
+### Data_Analysi.ipynb :
      a.Importing Libraries and dependencies -- os, numpy,pandas,alpaca_trade_api, MCForecastTools,panel,pypfopt
      b.Analysis involved creating data frames of percentage daily returns using closing prices of the top 10 fintech stocks based on the data from alpaca trade api
      c.Create line plot of cumulative returns for our portfolio
