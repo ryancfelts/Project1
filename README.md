@@ -65,7 +65,7 @@ There were two main notebooks used for coding the cleanup and analysis for this 
     
 
 ## Presentation
-    Link to the presentation : crated in beautiful.ai
+    Link to the presentation : crated in beautiful.ai  All the graphs are included in the presentation deck.
     
 ## Submission
 
