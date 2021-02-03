@@ -63,18 +63,13 @@ There were two main notebooks used for coding the cleanup and analysis for this 
      j.Correlation graph - heat map of SPY and fintech stocks
      k.Identification of the top 4 fintech stocks that performed well compared to SPY using the sharpre ratios of above 1, high beta
     
-     
-
-#Text from original instructions below:
 
 ## Presentation
-    Link to the presentation : 
-
-As long as your slides meet the [presentation requirements](PresentationRequirements.md), you are free to structure the presentation however you wish, but students are often successful with the format laid out in the [presentation guidelines](PresentationGuidelines.md).
-
+    Link to the presentation : crated in beautiful.ai
+    
 ## Submission
 
-In addition to submitting your project on Bootcamp Spot individually, please [fill out this form](https://forms.gle/CBk5tyy4sSsGN8k38) **once per group**.
+please [fill out this form](https://forms.gle/CBk5tyy4sSsGN8k38) **once per group**.
 
 - - -
 
