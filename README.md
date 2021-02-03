@@ -22,39 +22,11 @@ Source of Data for the following tickers : "SQ","ADYEY","MELI","GDOT","PYPL","FI
 https://app.alpaca.markets/brokerage/dashboard/overview
  
  The current portfolio stocks were: AAPL,NKE,GLW,NEE,IBM,UIS,TROX,BND,MSFT,JNJ,BRK.B,VCLT,SPLB,IGLB,BAR,SLV,DBO
-
-#Text from original instructions below:
-# Guidelines for Project 1
-
-This document contains guidelines, requirements, and suggestions for Project 1.
-
-## Team Effort
-
-Before anything, remember that projects are a group effort: Working closely with your teammates is a requirement. This helps teach real-world collaborative workflows and enables you to tackle more difficult problems than you'd be able to working alone.
-
-In other words, working in groups allows you to **work smart** and **dream big**. Take advantage of it!
-
-## Project Proposal
-
-Before you start writing any code, your group should outline the scope and purpose of your project. This helps provide direction and prevent [scope creep](https://en.wikipedia.org/wiki/Scope_creep).
-
-Write this as a brief summary of your interests and intent, including:
-
-* The kind of data you'd like to work with and the field you're interested in (e.g., trading, quantitative analysis).
-
-* The kinds of questions you'll be asking of that data.
-
-* Possible source for such data.
-
-This constitutes your Project Proposal and Outline, and it should look something like this:
-
-> Our project is to uncover patterns in credit card fraud. We'll examine relationships between types of transactions and location; purchase prices and times of day; trends in purchases over the course of the year; and related questions, as the data admits.
-
-## Finding Data
-
-Once your group has written an outline, it's time to start hunting for data. You are free to use data from any source, but we recommend the following curated sources of high-quality data:
-
-* [data.world](https://data.world/)
+ An .csv file exported from Ralph's current brokerage firm helped us get the data for these stocks.
+ 
+ Some of the other sources our team used for research were:
+ 
+ * [data.world](https://data.world/)
 
 * [Kaggle](https://www.kaggle.com/)
 
@@ -66,31 +38,37 @@ Once your group has written an outline, it's time to start hunting for data. You
 
 * [Medium APIs List](https://medium.com/@benjamin_libor/a-curated-collection-of-over-150-apis-to-build-great-products-fdcfa0f361bc)
 
-Chances are you'll have to update your Project Outline as you explore the available data. **This is fine**—adjustments like this are part of the process! Just make sure everyone in the group is up-to-speed on the goals of the project as you make changes.
-
-Make sure that your data is not too large for local analysis. **Big Data** datasets are difficult to manage locally, so consider a subset of that data or a different dataset altogether.
-
 ## Data Cleanup & Analysis
 
-With data in hand, it's time to tackle development and analysis. This is where the fun starts!
+There were two main notebooks used for coding the cleanup and analysis for this project :
 
-Inevitably, the analysis process can be broken into two broad phases: **Exploration and Cleanup** and **Analysis** proper.
+###1. Data_Cleanup.ipynb : 
+     a. Importing Libraries and dependencies -- os, numpy,pandas,alpaca_trade_api
+     b. Generated the dataframe for top 10 fintech stocks using api
+     c.The tickers used to create dataframe :  "SQ","ADYEY","MELI","GDOT","PYPL","FISV","PFE","GS","V","AXP","SPY" . These are the top 10 fintech stock found in Referenc: Motley        fool and other online investment portals
+     d.The .csv file exported from potential Client's brokerage contained the details of the stocks : 
+     AAPL,NKE,GLW,NEE,IBM,UIS,TROX,BND,MSFT,JNJ,BRK.B,VCLT,SPLB,IGLB,BAR,SLV,DBO
+     e. The two datafiles were checked for nulls and other incongruent data and using code cleansed.
+     
+ ###2. Data_Analysi.ipynb :
+     a.Importing Libraries and dependencies -- os, numpy,pandas,alpaca_trade_api, MCForecastTools,panel,pypfopt
+     b.Analysis involved creating data frames of percentage daily returns using closing prices of the top 10 fintech stocks based on the data from alpaca trade api
+     c.Create line plot of cumulative returns for our portfolio
+     d.Create distribution plot of cumulative returns for our portfolio using MCForecastTools library ( performing Monte Carlo Simulation).
+     e.Creating a Monte Carlo Simulation of the SPY data
+     f.Comparitive study of Simulated data and plotting graphs of Individual Stocks vs SPY
+     g.Calculation and plotting graphs of co-variance of stocks
+     h.Calculation and plotting graphs of beta of stocks
+     i.Calculation and plotting of sharpe ratios of stocks
+     j.Correlation graph - heat map of SPY and fintech stocks
+     k.Identification of the top 4 fintech stocks that performed well compared to SPY using the sharpre ratios of above 1, high beta
+    
+     
 
-As you've learned, you'll need to explore, clean, and reformat your data before you can begin to answer your research questions. We recommend keeping track of these exploration and cleanup steps in a dedicated Jupyter Notebook, both for organization's sake and to make it easier to  present your work later.
-
-Similarly, after you've massaged your data and are ready to start crunching numbers, you should keep track of your work in a Jupyter Notebook dedicated specifically to analysis.
-
-During both phases, **don't forget to include plots**! Don't make the mistake of waiting to build figures until you're preparing your presentation. Creating them along the way can reveal insights and interesting trends in the data that you might not notice otherwise.
-
-We recommend focusing your analysis on techniques such as aggregation, correlation, comparison, summary statistics, and financial analysis.
-
-Finally, be sure that your projects meet the [technical requirements](TechnicalRequirements.md).
+#Text from original instructions below:
 
 ## Presentation
-
-After you've analyzed your data to your satisfaction, you'll put together a presentation to show off your work, explain your process, and discuss your conclusions.
-
-This presentation will be delivered as a slideshow, and it should give your classmates and instructional staff an overview of your work. PowerPoint, Keynote, and Google Slides are all acceptable for building slides.
+    Link to the presentation : 
 
 As long as your slides meet the [presentation requirements](PresentationRequirements.md), you are free to structure the presentation however you wish, but students are often successful with the format laid out in the [presentation guidelines](PresentationGuidelines.md).
 
