@@ -6,7 +6,6 @@ This Project is a collaborative effort to build a portfolio recommendation that 
 
 We divided the components of this project work into technical, research, presentation and miscellaneous to enable collorative contributions by team members. This division allowed for minimizing turnaround ties
 
-In other words, working in groups allows you to **work smart** and **dream big**. Take advantage of it!
 
 ## Project Proposal
 
@@ -21,7 +20,8 @@ The tools we used :
 
 Source of Data for the following tickers : "SQ","ADYEY","MELI","GDOT","PYPL","FISV","PFE","GS","V","AXP","SPY"
 https://app.alpaca.markets/brokerage/dashboard/overview
-
+ 
+ The current portfolio stocks were: AAPL,NKE,GLW,NEE,IBM,UIS,TROX,BND,MSFT,JNJ,BRK.B,VCLT,SPLB,IGLB,BAR,SLV,DBO
 
 #Text from original instructions below:
 # Guidelines for Project 1
